@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ColorSliderView: View {
-    
     @Binding var value: Double
     @Binding var TFValue: String
     
     var body: some View {
-        
         HStack {
             Text("\(lround(value))").foregroundColor(.white)
             Slider(value: $value, in: 0...255, step: 1)
